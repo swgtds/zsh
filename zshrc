@@ -1,9 +1,9 @@
 #export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-if [ -z $DISPLAY ] && [ "$(tty)" = "/dev/tty1" ]
-then
-	startx
-fi
+#if [ -z $DISPLAY ] && [ "$(tty)" = "/dev/tty1" ]
+#then
+#	startx
+#fi
 
 HISTFILE=$HOME/.zsh_history
 HISTSIZE=100000
