@@ -1,8 +1,8 @@
 
-if [ -z $DISPLAY ] && [ "$(tty)" = "/dev/tty1" ]
-then
-	startx
-fi
+#if [ -z $DISPLAY ] && [ "$(tty)" = "/dev/tty1" ]
+#then
+#	startx
+#fi
 
 HISTFILE=$HOME/.zsh_history
 HISTSIZE=100000
@@ -39,17 +39,17 @@ nitrogen --head=1 --set-zoom-fill $HOME/Pictures/Wallpapers/interstellar-wallpap
 alias update-mirrors='rate-mirrors --protocol https --entry-country india --allow-root arch | sudo tee /etc/pacman.d/mirrorlist'
 
 
-source '/usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.zsh'
-source '/usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh'
-source '/usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.zsh'
+#source '/usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.zsh'
+#source '/usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh'
+#source '/usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.zsh'
 
-export PATH="$HOME/flutter/bin:$PATH"
-export PATH="$HOME/Downloads/android-studio/bin:$PATH"
-export PATH="$PATH:$HOME/Android/Sdk/platform-tools"
-export PATH="$PATH:$HOME/Android/Sdk/cmdline-tools/latest/bin" 
-export PATH="$PATH:$HOME/Android/Sdk/build-tools/34.0.0"
-export PATH="$PATH:$HOME/Android/Sdk/emulator/bin64"
-export PATH="$PATH:$HOME/.pub-cache/bin"
+#export PATH="$HOME/flutter/bin:$PATH"
+#export PATH="$HOME/Downloads/android-studio/bin:$PATH"
+#export PATH="$PATH:$HOME/Android/Sdk/platform-tools"
+#export PATH="$PATH:$HOME/Android/Sdk/cmdline-tools/latest/bin" 
+#export PATH="$PATH:$HOME/Android/Sdk/build-tools/34.0.0"
+#export PATH="$PATH:$HOME/Android/Sdk/emulator/bin64"
+#export PATH="$PATH:$HOME/.pub-cache/bin"
 
 #export nvm into path
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
